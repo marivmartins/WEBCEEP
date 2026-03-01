@@ -5,11 +5,6 @@ body {
 
 }
 
-main {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #main-header {
     position: fixed;
     top: 0;
@@ -49,20 +44,12 @@ main {
 }
 
 #main-header .nav-menu a {
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-menu a {
     position: relative;
+    padding: 0.5rem 0;
     color: white;
     font-weight: 600;
     text-decoration: none;
     font-size: 1rem;
-    padding: 0.5rem 0;
     transition: color 0.3s ease;
 }
 
@@ -80,10 +67,6 @@ main {
 .nav-menu a:hover::after {
     width: 100%;
     left: 0;
-}
-
-.nav-menu a:hover::after {
-    width: 100%;
 }
 
 #main-header.scrolled {
@@ -105,11 +88,11 @@ main {
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    /* #main-header {
         flex-direction: column;
         text-align: center;
         padding: 1rem;
-    }
+    } */
 
     .nav-menu {
         margin-top: 1rem;
@@ -123,10 +106,6 @@ main {
     .nav-menu li {
         margin: 0.5rem 0;
     }
-}
-
-#main-header.scrolled .nav-menu a {
-    color: #176dcf;
 }
 
 #main-header.scrolled .nav-menu a::after {
@@ -226,8 +205,6 @@ h1 {
         top: 0;
     }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .intro2 {
     color: #176dcf;
@@ -465,19 +442,15 @@ h1 {
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
-#icone {
+.curso-icon {
     font-size: 2.5rem;
+    color: #176dcf;
 }
 
 .logo-titulo {
     display: flex;
     align-items: center;
 }
-
-img {
-    width: 100px;
-}
-
 
 .nav-menu ul {
     list-style: none;
@@ -522,6 +495,7 @@ footer {
     padding: 60px 100px;
     flex-wrap: wrap;
     margin-top: 0;
+    gap: 160px;
 }
 
 .footer-left img {
@@ -535,7 +509,7 @@ footer {
     min-width: 300px;
 }
 
-.footer-left h1 {
+.footer-left h2 {
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -549,7 +523,6 @@ footer {
 .footer-right {
     flex: 1;
     min-width: 300px;
-    margin-left: 400px;
 }
 
 .footer-right p {
