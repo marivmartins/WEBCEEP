@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function () {
     const header = document.getElementById("main-header");
-    if (window.scrollY > 100) {
+    if (window.scrollY > 200) {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
@@ -20,4 +20,5 @@ window.addEventListener('scroll', () => {
     if (posicaoLogo < alturaTela - 100) {
         logo.classList.add('visivel');
     }
+
 });
